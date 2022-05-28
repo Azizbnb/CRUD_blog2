@@ -24,7 +24,7 @@ class Post extends Model
         });
 
         self::updating(function($post){
-            $post->category()->associate(request()->category);
+            $post->category()->associate(Category::find(request()->category));
         });
     }
 

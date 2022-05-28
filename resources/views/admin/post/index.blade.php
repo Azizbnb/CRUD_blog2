@@ -26,11 +26,11 @@
                     </div>
                     <div class="flex items-center m-5 p-5">
                         
-                        <a href="{{ route('posts.edit', $post )}}" class="bg-yellow-500 px-2 py-3 block">Modifier</a>
+                        <a href="{{ route('admin.posts.edit', $post )}}" class="bg-yellow-500 px-2 py-3 block">Modifier</a>
                         
                         <a href="#" class="bg-red-500 px-2 py-3 block" 
                             onclick="event.preventDefault 
-                            document.getElementById('destroy-post-form').submit();">Supprimer  
+                            document.getElementById('admin.destroy-post-form').submit();">Supprimer  
                             <form action="{{ route ('posts.destroy', $post) }}" method="post" id="destroy-post-form"> 
                             @csrf
                             @method('delete')
