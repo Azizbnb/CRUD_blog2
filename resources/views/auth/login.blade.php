@@ -43,7 +43,7 @@
             </div> 
 
             <div class="flex items-center justify-end mt-4 flex-col">
-                <a class="bg-white p-2 rounded-lg text-sm text-gray-600 hover:text-red-900" href="{{ route('register') }}">
+                <a class="bg-red-200 p-2 rounded-lg text-sm text-gray-600 hover:text-black hover:bg-blue-200 hover:border-x-4 active:bg-blue-400" href="{{ route('register') }}">
                     {{ __('pas encore de compte? cliquez ici') }}
                 </a>
                 @if (Route::has('password.request'))

@@ -8,7 +8,7 @@
     <div>
         {{ $guestMode }}
     </div>
-    <div class="w-full sm:max-w-md mt-6 px-6 py-4  shadow-mg shadow-gray-500 overflow-hidden sm:rounded-lg  border-8 border-r-blue-900 border-b-blue-900 border-t-red-900 border-l-red-900">
+    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-mg shadow-gray-500 overflow-hidden sm:rounded-lg  border-4 border-r-blue-900 border-b-blue-900 border-t-red-900 border-l-red-900">
         {{ $slot }}
     </div>
 </div>

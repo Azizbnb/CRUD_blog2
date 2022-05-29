@@ -1,8 +1,12 @@
 <x-app-layout>
-    <x-slot name="header" class="justify-center">
+    <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight ">
-            {{ __('Tous vos articles') }}
+            {{ __('Tous vos Posts') }}
         </h2>
+        <div>
+            <br />
+            <h3>Retrouvez tous les contenu que vous avez créé ici !</h3>
+        </div>
     </x-slot>
 
     <div class="py-12">

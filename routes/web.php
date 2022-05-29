@@ -20,6 +20,10 @@ Route::get('/', [PostController::class, 'index'])
     ->name('posts.index');
 
 Route::middleware(['auth'])->group (function (){
+    
+    Route::middleware(['admin'])->name('admin.')->prefix('admin')->group(function() {
+        Route::resource('posts', AdminPostController::class);
+    });
 
     Route::resource('posts', PostController::class)
         ->except('index');
@@ -27,9 +31,7 @@ Route::middleware(['auth'])->group (function (){
     Route::get('/dashboard', [DashboardController::class, 'index'])
          ->name('dashboard');
 
-    Route::middleware(['admin'])->name('admin.')->prefix('admin')->group(function() {
-        Route::resource('posts', AdminPostController::class);
-    });
+    
 });
 
 

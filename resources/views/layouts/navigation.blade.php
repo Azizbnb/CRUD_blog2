@@ -7,6 +7,10 @@
                 
 
                 <!-- Navigation Links -->
+                <div class=" w-20 h-11 mt-2">
+                    <img src="{{ asset('data/img/logo-almj.png') }}" alt="">
+                </div>
+                
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('posts.index')" :active="request()->routeIs('dashboard')">
                         {{ __('Accueil') }}
@@ -76,7 +80,7 @@
                                 {{ __('Se connecter') }}
                             </x-dropdown-link>
                             <x-dropdown-link :href="route('register')">
-                                {{ __('S\'enregistrer') }}
+                                {{ __('S\'inscrire') }}
                             </x-dropdown-link>
                     </x-slot>
                 </x-dropdown>

@@ -10,22 +10,23 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+         <!-- Styles -->
+         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen" style="background-color:#06113C;">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
-            <header class="bg-red-100 shadow-lg shadow-gray-300 mx-5 my-5 w-96 rounded-md ">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 ">
-                    {{ $header }}
-                </div>
-            </header>
+            
 
             <!-- Page Content -->
             <main>

@@ -1,13 +1,21 @@
 <x-guest-layout>
     <x-auth-card>
+    <x-slot name="logo">
+            <x-logo/> 
+        </x-slot>
         <x-slot name="bienvenue">
             <a href="/">
                 <x-bienvenue class="w-20 h-20 fill-current text-gray-500" />
             </a>
         </x-slot>
+        <x-slot name="guestMode">
+            <a href="/">
+                <x-guestMode class="w-20 h-20 fill-current"/>
+            </a>
+        </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
+            {{ __('l'ALMJ vous remercie d'avoir créer un compte sur notre site ! Avant de commencer, Nous devons verifier votre adresse e-mail en cliquant sur le lien pour une question de securité. the email.') }}
         </div>
 
         @if (session('status') == 'verification-link-sent')

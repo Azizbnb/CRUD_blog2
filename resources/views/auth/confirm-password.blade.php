@@ -1,8 +1,16 @@
 <x-guest-layout>
     <x-auth-card>
+    <x-slot name="logo">
+            <x-logo/> 
+        </x-slot>
         <x-slot name="bienvenue">
             <a href="/">
                 <x-bienvenue class="w-20 h-20 fill-current text-gray-500" />
+            </a>
+        </x-slot>
+        <x-slot name="guestMode">
+            <a href="/">
+                <x-guestMode class="w-20 h-20 fill-current"/>
             </a>
         </x-slot>
 

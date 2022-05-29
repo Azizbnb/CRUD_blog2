@@ -1,9 +1,7 @@
 <x-guest-layout>
     <x-auth-card>
     <x-slot name="logo">
-            <x-logo>
-                
-            </x-logo>   
+            <x-logo/> 
         </x-slot>
         <x-slot name="bienvenue">
             <a href="/">
