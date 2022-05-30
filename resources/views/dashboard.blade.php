@@ -16,10 +16,10 @@
             {{ session('success') }}
             @endif
 
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white overflow-hidden sm:rounded-lg">
                 @foreach ($posts as $post)
 
-                    <div class="flex items-center">
+                    <div class="flex items-center bg-slate-300">
                         {{ $post->title }}
                     </div>
                     <div class="flex items-center bg-gray-100">

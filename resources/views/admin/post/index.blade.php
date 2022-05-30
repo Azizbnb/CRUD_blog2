@@ -30,8 +30,9 @@
                         
                         <a href="#" class="bg-red-500 px-2 py-3 block" 
                             onclick="event.preventDefault 
-                            document.getElementById('admin.destroy-post-form').submit();">Supprimer  
-                            <form action="{{ route ('posts.destroy', $post) }}" method="post" id="destroy-post-form"> 
+                            document.getElementById('destroy-post-form').submit();">
+                            Supprimer  
+                            <form action="{{ route ('admin.posts.destroy', $post) }}" method="post" id="destroy-post-form"> 
                             @csrf
                             @method('delete')
                         </form></a>
